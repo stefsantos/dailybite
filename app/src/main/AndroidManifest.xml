@@ -12,15 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dailybite"
         tools:targetApi="31">
+
+        <!-- MainActivity Declaration -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- LoginActivity Declaration -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+
     </application>
 
 </manifest>
