@@ -25,7 +25,8 @@
         </activity>
 
         <!-- LoginActivity Declaration -->
-        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".SignInActivity" android:exported="false" />
+        <activity android:name=".WeightActivity" android:exported="false" />
 
     </application>
 
