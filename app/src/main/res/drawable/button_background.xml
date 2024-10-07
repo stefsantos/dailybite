@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- State when button is pressed or hovered -->
+        <item android:state_pressed="true">
+            <shape>
+                <solid android:drawable="#2AAA8A"/>
+                <corners android:radius="8dp" />
+            </shape>
+        </item>
+        <!-- State when button is focused (optional) -->
+        <item android:state_focused="true"  android:drawable="#5F9EA0"  />
+
+        <!-- Default state when no action is applied -->
+        <item>
+            <shape>
+                <solid android:color="@android:color/transparent" />
+                <stroke android:width="2dp" android:color="#40826D" />
+                <corners android:radius="8dp" />
+            </shape>
+        </item>
+
+</selector>

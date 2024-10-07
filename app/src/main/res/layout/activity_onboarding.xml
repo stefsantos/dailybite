@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Gender selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="What's your gender?"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male bodies need more calories"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:id="@+id/male_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:background="@drawable/button_background"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/female_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:background="@drawable/button_background"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <!-- Activity Level -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="How active are you?"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A sedentary person burns fewer calories than an active person"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/active_btn_sedentary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:text="Sedentary" />
+
+            <Button
+                android:id="@+id/active_btn_lowactive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:text="Low Active" />
+
+            <Button
+                android:id="@+id/active_btn_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:text="Active" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/black"
+                android:text="Very Active" />
+
+            <!-- Height selection (Feet and Inches) -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How tall are you?"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The taller you are, the more calories your body needs."
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+            <!-- Height -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+            <NumberPicker
+                android:id="@+id/height_meters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minValue="0"
+                android:maxValue="5"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp" />
+            <NumberPicker
+                android:id="@+id/height_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minValue="0"
+                android:maxValue="99"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center"/>
+
+            <!-- TextView Teller for 'cm' (centimeters) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textSize="16sp"
+                android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Weight input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's your weight?"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The more you weigh, the more calories your body burns"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter weight in kg"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:inputType="numberDecimal" />
+
+            <!-- Age input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's your age?"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Required number of calories varies with age"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/age_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your age (In Years)"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:inputType="number" />
+
+            <!-- Submit button -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
