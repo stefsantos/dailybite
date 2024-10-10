@@ -34,6 +34,7 @@
         <activity android:name=".AgeActivity" android:exported="false" />
         <activity android:name=".PFCActivity" android:exported="false" />
         <activity android:name=".CreateAccountActivity" android:exported="false" />
+        <activity android:name=".FoodDiaryActivity" android:exported="false"/>
     </application>
 
 </manifest>

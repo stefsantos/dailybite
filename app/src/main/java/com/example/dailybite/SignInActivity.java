@@ -1,5 +1,6 @@
 package com.example.dailybite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +23,6 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Enable edge-to-edge display
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signin); // Make sure activity_login.xml exists and is referenced correctly
 
@@ -57,7 +57,8 @@ public class SignInActivity extends AppCompatActivity {
 
             // Proceed with login logic
             Toast.makeText(SignInActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-            // You can add more code here to handle actual login (e.g., authentication)
+            Intent intent = new Intent(SignInActivity.this, FoodDiaryActivity.class);
+            startActivity(intent);
         });
 
         // Set OnClickListener for the forgot password text

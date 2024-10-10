@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateAccountActivity extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        EdgeToEdge.enable(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createaccount);  // Make sure your layout file is named correctly
 
@@ -54,7 +57,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     Toast.makeText(CreateAccountActivity.this, "Account Created", Toast.LENGTH_SHORT).show();
 
                     // Redirect to login page or home page after account creation
-                    startActivity(new Intent(CreateAccountActivity.this, MainActivity.class));
+                    startActivity(new Intent(CreateAccountActivity.this, FoodDiaryActivity.class));
                 }
             }
         });
