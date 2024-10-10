@@ -71,7 +71,7 @@ public class PFCActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to move to another activity for Email login (optional)
-                Intent intent = new Intent(PFCActivity.this, MainActivity.class);
+                Intent intent = new Intent(PFCActivity.this, CreateAccountActivity.class);
                 startActivity(intent);
             }
         });
