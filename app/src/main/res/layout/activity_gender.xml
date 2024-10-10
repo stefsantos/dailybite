@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Gender Question Text -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="What’s your gender?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Male bodies need more calories"
+        android:textSize="16sp"
+        android:textColor="#7A7A7A" />
+
+    <!-- Male Button -->
+    <Button
+        android:id="@+id/male_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle_text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+    android:text="Male"
+    android:textColor="#000000"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:textSize="18sp" />
+
+    <!-- Female Button -->
+    <Button
+        android:id="@+id/female_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/male_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Female"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Back Text -->
+    <TextView
+        android:id="@+id/back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textColor="#7A7A7A" />
+
+    <!-- Next Circular Button -->
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#00C853"
+        android:src="@drawable/next_arrow"
+        android:scaleType="centerInside"
+        android:background="@drawable/ellipse"
+        android:contentDescription="Next" />
+
+</RelativeLayout>

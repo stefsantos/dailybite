@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 
 public class WeightActivity extends AppCompatActivity {
 
@@ -69,9 +70,8 @@ public class WeightActivity extends AppCompatActivity {
         proceedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Proceed to the next screen
-                // Intent intent = new Intent(WeightActivity.this, NextActivity.class); // Replace with the next activity
-                // startActivity(intent);
+                 Intent intent = new Intent(WeightActivity.this, GenderActivity.class); // Replace with the next activity
+                 startActivity(intent);
             }
         });
     }
