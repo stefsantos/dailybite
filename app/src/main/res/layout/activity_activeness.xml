@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Question text -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="How active are you?"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="A sedentary person burns fewer calories than an active person"
+        android:textAlignment="center"
+        android:textColor="#7A7A7A"
+        android:textSize="14sp" />
+
+    <!-- Sedentary button -->
+    <TextView
+        android:id="@+id/sedentary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtext"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sedentary"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="15dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Low Active button -->
+    <TextView
+        android:id="@+id/low_active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sedentary_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Low Active"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="15dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Active button -->
+    <TextView
+        android:id="@+id/active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/low_active_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Active"
+        android:background="@drawable/outline"
+    android:textSize="18sp"
+    android:textColor="#000000"
+    android:padding="15dp"
+    android:fontFamily="sans-serif"/>
+
+    <!-- Very Active button -->
+    <TextView
+        android:id="@+id/very_active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/active_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Very Active"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="15dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Back Text -->
+    <TextView
+        android:id="@+id/back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textColor="#7A7A7A"/>
+
+    <!-- Next Circular Button -->
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/next_arrow"
+        android:scaleType="centerInside"
+        android:contentDescription="Next"/>
+
+</RelativeLayout>

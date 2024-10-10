@@ -6,12 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;  // Import Toast to show messages
-
+import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.material.internal.EdgeToEdgeUtils;
 
 public class GenderActivity extends AppCompatActivity {
 
@@ -33,23 +30,23 @@ public class GenderActivity extends AppCompatActivity {
         nextButton = findViewById(R.id.next_button);
         backText = findViewById(R.id.back_text);
 
-        // Click listener for Male button
+        // Set onClickListener for Male button
         maleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 selectedGender = "Male";
-               // maleButton.setBackgroundResource(R.drawable.gender_button_border); // Highlight male button
-                femaleButton.setBackgroundColor(android.graphics.Color.TRANSPARENT); // Reset female button
+                selectGenderOption(maleButton);  // Highlight male button
+                Toast.makeText(GenderActivity.this, "Selected: Male", Toast.LENGTH_SHORT).show();
             }
         });
 
-        // Click listener for Female button
+        // Set onClickListener for Female button
         femaleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 selectedGender = "Female";
-                //femaleButton.setBackgroundResource(R.drawable.gender_button_border); // Highlight female button
-                maleButton.setBackgroundColor(android.graphics.Color.TRANSPARENT); // Reset male button
+                selectGenderOption(femaleButton);  // Highlight female button
+                Toast.makeText(GenderActivity.this, "Selected: Female", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -68,7 +65,7 @@ public class GenderActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (selectedGender != null) {
                     // If a gender is selected, proceed to the next activity
-                    Intent intent = new Intent(GenderActivity.this, WeightActivity.class);
+                    Intent intent = new Intent(GenderActivity.this, ActivenessActivity.class);
                     intent.putExtra("selectedGender", selectedGender);  // Pass the selected gender to the next activity
                     startActivity(intent);
                 } else {
@@ -77,6 +74,15 @@ public class GenderActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void selectGenderOption(Button selectedButton) {
+        // Reset the backgrounds for both buttons
+        maleButton.setBackgroundResource(android.R.color.transparent);
+        femaleButton.setBackgroundResource(android.R.color.transparent);
+
+        // Apply the outline to the selected button
+        selectedButton.setBackgroundResource(R.drawable.outline);
     }
 
     // Method to show a message (e.g., toast) when no gender is selected

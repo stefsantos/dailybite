@@ -38,12 +38,12 @@
         android:layout_below="@id/subtitle_text"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-
-    android:text="Male"
-    android:textColor="#000000"
-    android:paddingLeft="40dp"
-    android:paddingRight="40dp"
-    android:textSize="18sp" />
+        android:background="@android:color/transparent"
+        android:text="Male"
+        android:textColor="#000000"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="18sp" />
 
     <!-- Female Button -->
     <Button
@@ -52,8 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/male_button"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
         android:text="Female"
         android:textColor="#000000"
         android:textSize="18sp" />

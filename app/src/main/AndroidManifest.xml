@@ -27,10 +27,16 @@
             </intent-filter>
         </activity>
 
-        <!-- LoginActivity Declaration -->
+        <!-- Activity Declaration -->
         <activity android:name=".SignInActivity" android:exported="false" />
-        <activity android:name=".WeightActivity" android:exported="false" />
+        <activity android:name=".WeightgoalActivity" android:exported="false" />
         <activity android:name=".GenderActivity" android:exported="false" />
+        <activity android:name=".ActivenessActivity" android:exported="false" />
+        <activity android:name=".HeightActivity" android:exported="false" />
+        <activity android:name=".WeightActivity" android:exported="false" />
+        <activity android:name=".AgeActivity" android:exported="false" />
+        <activity android:name=".PFCActivity" android:exported="false" />
+        <activity android:name=".CreateAccountActivity" android:exported="false" />
     </application>
 
 </manifest>

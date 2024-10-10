@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to LoginActivity
-                Intent intent = new Intent(MainActivity.this, WeightActivity.class);
+                Intent intent = new Intent(MainActivity.this, WeightgoalActivity.class);
                 startActivity(intent);
             }
         });

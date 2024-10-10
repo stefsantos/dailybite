@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
-        android:text="What's your weight?"
+        android:text="What’s your age?"
         android:textSize="24sp"
         android:textColor="#000000"
         android:fontFamily="sans-serif-medium" />
@@ -24,14 +24,14 @@
         android:layout_below="@id/title_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="The more you weigh, the more calories your body burns"
+        android:text="Required number of calories varies with age"
         android:textAlignment="center"
         android:textColor="#7A7A7A"
         android:textSize="14sp" />
 
-    <!-- Weight input -->
+    <!-- Age input -->
     <EditText
-        android:id="@+id/weight_input"
+        android:id="@+id/age_input"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -41,21 +41,19 @@
         android:textColor="#000000"
         android:gravity="center"
         android:textSize="18sp"
-        android:inputType="numberDecimal" />
+        android:inputType="number" />
 
-    <!-- Unit toggle button (kg/lbs) -->
+    <!-- Unit label for years -->
     <TextView
-        android:id="@+id/unit_toggle_button"
+        android:id="@+id/years_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/weight_input"
-        android:layout_alignBaseline="@id/weight_input"
+        android:layout_toEndOf="@id/age_input"
+        android:layout_alignBaseline="@id/age_input"
         android:layout_marginStart="10dp"
-        android:text="kg"
+        android:text="Years"
         android:textColor="#00C853"
         android:textSize="18sp"
-        android:clickable="true"
-        android:focusable="true"
         android:padding="5dp" />
 
     <!-- Back Text -->

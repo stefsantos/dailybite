@@ -1,0 +1,148 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Title for Recommended PFC -->
+    <TextView
+        android:id="@+id/recommended_pfc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Recommended PFC"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Subtitle for PFC Info -->
+    <TextView
+        android:id="@+id/pfc_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_pfc_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="You can always change PFC in the profile"
+        android:textAlignment="center"
+        android:textColor="#7A7A7A"
+        android:textSize="14sp" />
+
+    <!-- Proteins Button -->
+    <Button
+        android:id="@+id/proteins_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pfc_subtitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:text="Proteins: 225g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00C853"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp" />
+
+    <!-- Fats Button -->
+
+    <!-- Carbs Button -->
+    <Button
+        android:id="@+id/fats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pfc_subtitle"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@id/proteins_button"
+        android:backgroundTint="#00C853"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Fats: 118g"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/carbs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proteins_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:text="Carbs: 340g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00C853"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp" />
+
+    <!-- Calories Button -->
+    <Button
+        android:id="@+id/calories_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proteins_button"
+        android:layout_toEndOf="@id/carbs_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Calories: 3400"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00C853"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp" />
+
+    <!-- Continue with Google Button -->
+    <Button
+        android:id="@+id/continue_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calories_button"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Continue with Google"
+        android:drawableStart="@drawable/baseline_cloud_24"
+    android:textColor="#000000"
+    android:backgroundTint="#FFFFFF"
+    android:elevation="4dp"
+    android:drawablePadding="10dp"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20dp"
+    android:gravity="center_vertical"
+    android:textSize="16sp" />
+
+    <!-- Continue with Email Button -->
+    <Button
+        android:id="@+id/continue_with_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continue_with_google"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Continue with Email"
+        android:drawableStart="@drawable/ic_email"
+    android:textColor="#000000"
+    android:backgroundTint="#FFFFFF"
+    android:elevation="4dp"
+    android:drawablePadding="10dp"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20dp"
+    android:gravity="center_vertical"
+    android:textSize="16sp" />
+
+    <!-- Back Text -->
+    <TextView
+        android:id="@+id/back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textColor="#7A7A7A" />
+
+</RelativeLayout>

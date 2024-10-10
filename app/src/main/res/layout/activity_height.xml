@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Question text -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="How tall are you?"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="The taller you are, the more calories your body needs"
+        android:textAlignment="center"
+        android:textColor="#7A7A7A"
+        android:textSize="14sp" />
+
+    <!-- Toggle for unit switching -->
+    <Switch
+        android:id="@+id/unit_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Switch to Imperial"/>
+
+    <!-- Meters/Feet NumberPicker -->
+    <NumberPicker
+        android:id="@+id/meter_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unit_switch"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"/>
+
+    <!-- 'm/ft' Label for meters or feet -->
+
+    <!-- Centimeters/Inches NumberPicker -->
+    <TextView
+        android:id="@+id/meter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/meter_picker"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="78dp"
+        android:layout_toEndOf="@id/meter_picker"
+        android:text="m"
+        android:textColor="#7A7A7A"
+        android:textSize="18sp" />
+
+    <NumberPicker
+        android:id="@+id/cm_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unit_switch"
+        android:layout_toEndOf="@id/meter_label"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <!-- 'cm/in' Label for centimeters or inches -->
+
+    <!-- Back Text -->
+    <TextView
+        android:id="@+id/cm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cm_picker"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="75dp"
+        android:layout_toEndOf="@id/cm_picker"
+        android:text="cm"
+        android:textColor="#7A7A7A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textColor="#7A7A7A"/>
+
+    <!-- Next Circular Button -->
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/next_arrow"
+        android:scaleType="centerInside"
+        android:contentDescription="Next"/>
+
+</RelativeLayout>
