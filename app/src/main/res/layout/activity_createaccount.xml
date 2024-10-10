@@ -72,12 +72,12 @@
         android:textColor="@android:color/black"
         android:textSize="16sp"/>
 
-    <!-- Login Button -->
+    <!-- Create Account -->
     <Button
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Login"
+        android:text="Create Account"
         android:textColor="@android:color/white"
         android:backgroundTint="#00C853"
         android:layout_below="@id/password_input"
