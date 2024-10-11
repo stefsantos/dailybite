@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">dailybite</string>
+    <string name="today">Today</string>
+    <string name="proteins">Proteins</string>
+    <string name="water_intak">Water Intake</string>
+    <string name="water">Water</string>
+    <string name="liters_water">1.9 / 2.5L</string>
+    <string name="last_time_1">Last time 10:45 AM</string>
+    <string name="water_percent">76%</string>
 </resources>

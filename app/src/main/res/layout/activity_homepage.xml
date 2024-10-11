@@ -24,9 +24,9 @@
     <TextView
         android:id="@+id/today"
         android:layout_width="41dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="43dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="44dp"
         android:gravity="top"
         android:lineSpacingExtra="0sp"
         android:text="@string/today"
@@ -53,16 +53,16 @@
 
     <RelativeLayout
         android:id="@+id/nutrients_box"
-        android:layout_width="380dp"
+        android:layout_width="400dp"
         android:layout_height="144dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="160dp"
         android:background="@drawable/nutrients_i"
         android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
 
     </RelativeLayout>
@@ -198,7 +198,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarDeterminate_fats"
+        android:id="@+id/progressBarDeterminate_calories"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv_calories"
+        android:id="@+id/calories"
         android:layout_width="304dp"
         android:layout_height="15dp"
         android:layout_marginStart="55dp"
@@ -220,5 +220,162 @@
         android:textAppearance="@style/calories"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_water_intak"
+        android:layout_width="74dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="323dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/water_intak"
+        android:textAppearance="@style/water_intak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/water_box"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/nutrients_i"
+        android:clipToOutline="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="34dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="364dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/water"
+        android:textAppearance="@style/water"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/liters_water"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="379dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/liters_water"
+        android:textAppearance="@style/liters_water"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_time_1"
+        android:layout_width="110dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="443dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/last_time_1"
+        android:textAppearance="@style/last_time_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/icon_button_plus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="378dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/icon_button_minus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="426dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/surface_bac"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/water_bac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/water_backg"
+        android:layout_width="40dp"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="398dp"
+        android:background="@drawable/water_backg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/water_percent"
+        android:layout_width="24dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="428dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/water_percent"
+        android:textAppearance="@style/water_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@id/itami"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group" />
+
+    <ImageView
+        android:id="@+id/plus_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="378dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus_icon" />
+
+    <ImageView
+        android:id="@+id/minus_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="426dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minus_icon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,27 +19,45 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#0D1220</item>
     </style>
-    <!-- strings.xml -->
-    <string name="today">
-    Today
-    </string>
 
     <style name="tv_nutrients">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#0D1220</item>
     </style>
+
     <style name="nutrients">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#0D1220</item>
     </style>
-    <!-- strings.xml -->
-    <string name="proteins">
-Proteins
-</string>
+
     <style name="calories">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#0D1220</item>
     </style>
-    <!-- strings.xml -->
+
+    <style name="water_intak">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+
+    <style name="water">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+
+    <style name="liters_water">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+
+    <style name="last_time_1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#808080</item>
+    </style>
+    <style name="water_percent">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+
 
 </resources>
