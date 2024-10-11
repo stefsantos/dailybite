@@ -12,29 +12,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dailybite"
         tools:targetApi="31">
-
+        <activity
+            android:name=".homepage"
+            android:exported="false" />
         <!-- MainActivity Declaration -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Activity Declaration -->
-        <activity android:name=".SignInActivity" android:exported="false" />
-        <activity android:name=".WeightgoalActivity" android:exported="false" />
-        <activity android:name=".GenderActivity" android:exported="false" />
-        <activity android:name=".ActivenessActivity" android:exported="false" />
-        <activity android:name=".HeightActivity" android:exported="false" />
-        <activity android:name=".WeightActivity" android:exported="false" />
-        <activity android:name=".AgeActivity" android:exported="false" />
-        <activity android:name=".PFCActivity" android:exported="false" />
-        <activity android:name=".CreateAccountActivity" android:exported="false" />
-        <activity android:name=".FoodDiaryActivity" android:exported="false"/>
+        </activity> <!-- Activity Declaration -->
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightgoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivenessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDiaryActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

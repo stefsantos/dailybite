@@ -7,4 +7,218 @@
     android:layout_height="match_parent"
     tools:context=".homepage">
 
+    <TextView
+        android:id="@+id/itami"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="43dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/itami"
+        android:textAppearance="@style/itami"
+        android:translationY="-0.11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="41dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="43dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/today"
+        android:textAppearance="@style/today"
+        android:translationY="-0.03sp"
+        app:layout_constraintStart_toEndOf="@+id/itami"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nutrients_i"
+        android:layout_width="109dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/nutrients_i"
+        android:textAppearance="@style/nutrients_i"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itami" />
+
+    <RelativeLayout
+        android:id="@+id/nutrients_box"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/nutrients_i"
+        android:clipToOutline="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_protein"
+        android:layout_width="85.33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="171dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="150 / 225"
+        android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDeterminate_proteins"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="192dp"
+        android:max="100"
+        android:progress="66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/proteins"
+        android:layout_width="85.33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="198dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/proteins"
+        android:textAppearance="@style/nutrients"
+        android:translationY="-0.03sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fats"
+        android:layout_width="85.33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="171dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="30 / 118"
+        android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDeterminate_fats"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="192dp"
+        android:max="100"
+        android:progress="26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fats"
+        android:layout_width="85.33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="198dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="Fats"
+        android:textAppearance="@style/nutrients"
+        android:translationY="-0.03sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_carbs"
+        android:layout_width="85.33dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="171dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="319 / 340"
+        android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDeterminate_Carbs"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="192dp"
+        android:max="100"
+        android:progress="66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carbs"
+        android:layout_width="85.33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="198dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="Carbs"
+        android:textAppearance="@style/nutrients"
+        android:translationY="-0.03sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_calories"
+        android:layout_width="304dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="239dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="2456 / 3400"
+        android:textAppearance="@style/calories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDeterminate_fats"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="260dp"
+        android:max="100"
+        android:progress="72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_calories"
+        android:layout_width="304dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="270dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="Calories"
+        android:textAppearance="@style/calories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

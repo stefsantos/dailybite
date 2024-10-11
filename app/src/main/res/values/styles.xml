@@ -1,3 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="nutrients_i">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <string name="nutrients_i">
+        Nutrients Indicator
+    </string>
+    <style name="itami">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <string name="itami">
+        Itami
+    </string>
+
+    <style name="today">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <!-- strings.xml -->
+    <string name="today">
+    Today
+    </string>
+
+    <style name="tv_nutrients">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <style name="nutrients">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <!-- strings.xml -->
+    <string name="proteins">
+Proteins
+</string>
+    <style name="calories">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0D1220</item>
+    </style>
+    <!-- strings.xml -->
+
 </resources>
