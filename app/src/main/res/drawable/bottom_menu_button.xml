@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96"
+    >
+    <group>
+        <path
+            android:pathData="M48,0
+                              A48,48 0 1,0 48,96
+                              A48,48 0 1,0 48,0"
+            android:fillColor="#35CC8C"
+            />
+    </group>
+</vector>
