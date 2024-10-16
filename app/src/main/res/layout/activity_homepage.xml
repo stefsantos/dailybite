@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toTopOf="@+id/water"
+    app:layout_constraintTop_toTopOf="@+id/water">
 
     <TextView
         android:id="@+id/itami"
@@ -33,6 +35,7 @@
         android:translationY="-0.03sp"
         app:layout_constraintStart_toEndOf="@+id/itami"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/nutrients_i"
@@ -76,6 +79,7 @@
         android:lineSpacingExtra="0sp"
         android:text="150 / 225"
         android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarDeterminate_proteins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,7 +89,7 @@
         android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="190dp"
         android:max="100"
         android:progress="66"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,6 +119,7 @@
         android:lineSpacingExtra="0sp"
         android:text="30 / 118"
         android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarDeterminate_fats"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -154,6 +159,7 @@
         android:lineSpacingExtra="0sp"
         android:text="319 / 340"
         android:textAppearance="@style/tv_nutrients"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarDeterminate_Carbs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -207,6 +213,7 @@
         android:progress="72"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/calories"
         android:layout_width="304dp"
@@ -402,7 +409,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <ImageView
         android:id="@+id/plus_icon_meal"
         android:layout_width="24dp"
@@ -423,6 +429,7 @@
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/breakfast"
         android:layout_width="63dp"
@@ -446,7 +453,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_clock" />
-
 
 
     <TextView
@@ -485,10 +491,11 @@
         android:background="@drawable/meal"
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
 
     </RelativeLayout>
+
     <TextView
         android:id="@+id/lunch"
         android:layout_width="63dp"
@@ -540,51 +547,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/bottom_bar"
-        android:layout_width="390dp"
-        android:layout_height="90dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="640dp"
-        android:background="#DBFBED"
-        android:gravity="center_horizontal|top"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_nav_menu" />
 
-    <RelativeLayout
-        android:id="@+id/selected_na"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="620dp"
-        android:background="@drawable/bottom_menu_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView_diary"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="630dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/diary" />
-
-    <TextView
-        android:id="@+id/diary"
-        android:layout_width="50dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="187dp"
-        android:layout_marginTop="692dp"
-        android:lineSpacingExtra="0sp"
-        android:gravity="center_horizontal|top"
-        android:text="Diary"
-        android:textAppearance="@style/diary"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

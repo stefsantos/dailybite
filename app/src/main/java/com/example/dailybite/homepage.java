@@ -47,7 +47,7 @@ public class homepage extends AppCompatActivity {
         lunch = findViewById(R.id.lunch);
         time_lunch = findViewById(R.id.time_lunch);
         meal_cal_lunch = findViewById(R.id.meal_cal_lunch);
-        diary = findViewById(R.id.diary);
+
 
         // ProgressBars
         progressBarDeterminate_proteins = findViewById(R.id.progressBarDeterminate_proteins);
@@ -63,7 +63,6 @@ public class homepage extends AppCompatActivity {
         imageView_clock = findViewById(R.id.imageView_clock);
         imageView_clock_2 = findViewById(R.id.imageView_clock_2);
         plus_icon_meal = findViewById(R.id.plus_icon_meal);
-        imageView_diary = findViewById(R.id.imageView_diary);
 
         // RelativeLayouts
         nutrients_box = findViewById(R.id.nutrients_box);
@@ -72,7 +71,6 @@ public class homepage extends AppCompatActivity {
         icon_button_minus = findViewById(R.id.icon_button_minus);
         meal_1 = findViewById(R.id.meal_1);
         meal_2 = findViewById(R.id.meal_2);
-        selected_na = findViewById(R.id.selected_na);
 
         // Here you can add click listeners or other functionalities for each view
     }
