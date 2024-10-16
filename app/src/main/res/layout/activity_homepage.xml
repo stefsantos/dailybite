@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".homepage">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/itami"
@@ -247,7 +246,7 @@
         android:background="@drawable/nutrients_i"
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/water"

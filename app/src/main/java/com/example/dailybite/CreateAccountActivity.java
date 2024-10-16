@@ -57,7 +57,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     Toast.makeText(CreateAccountActivity.this, "Account Created", Toast.LENGTH_SHORT).show();
 
                     // Redirect to login page or home page after account creation
-                    startActivity(new Intent(CreateAccountActivity.this, FoodDiaryActivity.class));
+                    startActivity(new Intent(CreateAccountActivity.this, homepage.class));
                 }
             }
         });
